@@ -25,7 +25,7 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://www.shebatech.com.bd/',
     companyName: 'Sheba Technology Ltd.',
     projectDesc:
-        'Build a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
+        'Build a  E-commerce app using Flutter and Firebase for Android and iOS.',
     projectLink: {
       'playstore': '',
       'appstore': '',
@@ -79,36 +79,44 @@ const List<ProjectModel> listProjectOther = [
   ProjectModel(
     companyName: 'Self Employee',
     projectDesc:
-        'Build a Airline Ticket Booking application using Flutter with implement GetX state management. This application using Firebase for user and database authentication, and there are already multilingual features in English and Indonesian.',
+    'Build a Free VPN app using Flutter ',
     projectLink: {
-      'playstore':
-          'https://play.google.com/store/apps/details?id=com.fathdotdev.airpedia',
+      'playstore': '',
       'appstore': '',
-      'github': 'https://github.com/fathulaziss/airpedia',
+      'github': 'https://github.com/AbuNayemSabbir/free_vpn_app',
     },
-    projectTitle: 'Airpedia     ',
+    projectTitle: 'Free VPN app',
   ),
   ProjectModel(
     companyName: 'Self Employee',
     projectDesc:
-        'Build a Banyuwangi Library Service Information System for mobile application to facilitate librarians such as getting latest news or searching for some books. This application develop using Flutter with implement GetX state management, integration Rest-API, and using Firebase for push notification feature.',
+        'Build a  E-commerce app using Flutter and Firebase for Android and iOS.',
     projectLink: {
-      'playstore': 'https://play.google.com/store/apps/details?id=com.dispusip',
+      'playstore': '',
       'appstore': '',
-      'github': 'https://github.com/fathulaziss/dispusip',
+      'github': 'https://github.com/AbuNayemSabbir/E-Shop',
     },
-    projectTitle: 'Dispusip Mobile',
+    projectTitle: 'E-Shop',
   ),
   ProjectModel(
     companyName: 'Self Employee',
     projectDesc:
-        'Build a Cinema Ticket Booking application using Flutter with implement GetX state management. This application using Firebase for user and database authentication, integration Rest-API from open API themoviedb to getting movie data, and there are already multilingual features in English and Indonesian.',
+'Developed One to on video call app using Flutter and ZEGOCLOUD',
     projectLink: {
-      'playstore':
-          'https://play.google.com/store/apps/details?id=com.fathdotdev.flutix',
+      'playstore': '',
+      'appstore': '',
+      'github': 'https://github.com/AbuNayemSabbir/One_to_One_video_call',
+    },
+    projectTitle: 'One to One Video Calling',
+  ),
+  ProjectModel(
+    companyName: 'Self Employee',
+    projectDesc: 'Developed Notes app using Flutter and sqflite database',
+    projectLink: {
+      'playstore': '',
       'appstore': '',
       'github': 'https://github.com/fathulaziss/flutix-getx',
     },
-    projectTitle: 'Flutix           ',
+    projectTitle: 'Notes App  ',
   ),
 ];
