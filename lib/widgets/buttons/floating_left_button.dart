@@ -16,23 +16,13 @@ class FloatingLeftButton extends StatelessWidget {
         padding: EdgeInsets.only(left: 65.h),
         child: Column(
           children: [
-            IconButtonCustom(
-              isCustomIcon: true,
-              customIcon: 'ic_playstore.png',
-              iconSize: 30.h,
-              onPressed: () {
-                AppUtils.openLink(
-                  'https://play.google.com/store/apps/dev?id=8324269179567170757',
-                );
-              },
-            ),
-            verticalSpace(40.h),
+
             IconButtonCustom(
               isCustomIcon: true,
               customIcon: 'ic_github.png',
               iconSize: 30.h,
               onPressed: () {
-                AppUtils.openLink('https://github.com/fathulaziss');
+                AppUtils.openLink('https://github.com/AbuNayemSabbir');
               },
             ),
             verticalSpace(40.h),
@@ -41,27 +31,10 @@ class FloatingLeftButton extends StatelessWidget {
               customIcon: 'ic_linkedin.png',
               iconSize: 30.h,
               onPressed: () {
-                AppUtils.openLink('https://www.linkedin.com/in/fathulaziss');
+                AppUtils.openLink('https://www.linkedin.com/in/md-sabbir-ahmed-78a86b179/');
               },
             ),
-            verticalSpace(40.h),
-            IconButtonCustom(
-              isCustomIcon: true,
-              customIcon: 'ic_instagram.png',
-              iconSize: 30.h,
-              onPressed: () {
-                AppUtils.openLink('https://www.instagram.com/fathdotdev/');
-              },
-            ),
-            verticalSpace(40.h),
-            IconButtonCustom(
-              isCustomIcon: true,
-              customIcon: 'ic_youtube.png',
-              iconSize: 30.h,
-              onPressed: () {
-                AppUtils.openLink('https://www.youtube.com/@fathdotdev');
-              },
-            ),
+
             verticalSpace(40.h),
             Container(
               width: 2.h,

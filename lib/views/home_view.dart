@@ -44,6 +44,7 @@ class _HomeViewState extends State<HomeView> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: AppColor.backgroundColor,
       endDrawer: DrawerCustom(
@@ -61,6 +62,7 @@ class _HomeViewState extends State<HomeView> {
         },
       ),
       appBar: AppBarCustom(
+
         onPressedAbout: () {
           contentNavigation(1);
         },

@@ -27,7 +27,7 @@ class _AboutDetailDescState extends State<AboutDetailDesc> {
           TextSpan(
             recognizer: TapGestureRecognizer()
               ..onTap = () {
-                AppUtils.openLink('https://ihsansolusi.co.id/m/#home');
+                AppUtils.openLink('https://www.shebatech.com.bd/');
               },
             mouseCursor: MaterialStateMouseCursor.clickable,
             onEnter: (event) {
@@ -40,7 +40,7 @@ class _AboutDetailDescState extends State<AboutDetailDesc> {
                 decoration = TextDecoration.none;
               });
             },
-            text: 'PT. Ihsan Solusi Informatika',
+            text: 'Sheba Technology Ltd.',
             style: TextStyles.heeboText.copyWith(
               fontSize: 20.h,
               color: AppColor.primaryColor,

@@ -63,7 +63,7 @@ class DrawerCustom extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
               AppUtils.openLink(
-                'https://drive.google.com/file/d/1b7z3FZX9OxUZ2hrb3tEFt49C1mhD2qR-/view?usp=share_link',
+                'https://drive.google.com/file/d/1loAbb47w4b_y_C7ZCllYbgClOQuQSmqd/view?usp=sharing',
               );
             },
             width: 90.h,

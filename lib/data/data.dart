@@ -27,12 +27,11 @@ const List<ProjectModel> listProject = [
     projectDesc:
         'Build a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
     projectLink: {
-      'playstore':
-          'https://play.google.com/store/apps/details?id=com.posindonesia.giropos',
-      'appstore': 'https://apps.apple.com/id/app/pospay/id1542001621',
-      'github': '',
+      'playstore': '',
+      'appstore': '',
+      'github': 'https://github.com/AbuNayemSabbir/E-Shop',
     },
-    projectTitle: 'Pospay     ',
+    projectTitle: 'E-Shop',
   ),
   ProjectModel(
     companyLink: 'https://www.shebatech.com.bd/',

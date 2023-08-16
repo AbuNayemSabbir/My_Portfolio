@@ -17,17 +17,7 @@ class Footer extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              IconButtonCustom(
-                isCustomIcon: true,
-                customIcon: 'ic_playstore.png',
-                iconSize: 30.h,
-                onPressed: () {
-                  AppUtils.openLink(
-                    'https://play.google.com/store/apps/dev?id=8324269179567170757',
-                  );
-                },
-              ),
-              horizontalSpace(40.h),
+
               IconButtonCustom(
                 isCustomIcon: true,
                 customIcon: 'ic_github.png',
@@ -45,31 +35,15 @@ class Footer extends StatelessWidget {
                   AppUtils.openLink('https://www.linkedin.com/in/fathulaziss');
                 },
               ),
-              horizontalSpace(40.h),
-              IconButtonCustom(
-                isCustomIcon: true,
-                customIcon: 'ic_instagram.png',
-                iconSize: 30.h,
-                onPressed: () {
-                  AppUtils.openLink('https://www.instagram.com/fathdotdev');
-                },
-              ),
-              horizontalSpace(40.h),
-              IconButtonCustom(
-                isCustomIcon: true,
-                customIcon: 'ic_youtube.png',
-                iconSize: 30.h,
-                onPressed: () {
-                  AppUtils.openLink('https://www.youtube.com/@fathdotdev');
-                },
-              ),
+
+
             ],
           )
         else
           const SizedBox(),
         verticalSpace(40.h),
         Text(
-          'Build by Muhamad Fathul Azis\nwith Flutter Web',
+          'Build by Md Sabbir Ahmed\nwith Flutter Web',
           style: TextStyles.firaCodeText.copyWith(color: AppColor.textColor2),
           textAlign: TextAlign.center,
         ),

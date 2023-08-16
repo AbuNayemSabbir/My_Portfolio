@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       designSize: const Size(1920, 1080),
       builder: (context, child) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Md Sabbir Ahmed',
           theme: ThemeData(primarySwatch: Colors.blue),
           home: const HomeView(),
