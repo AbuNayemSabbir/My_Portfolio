@@ -12,10 +12,11 @@ class ProjectItem extends StatefulWidget {
   const ProjectItem({
     Key? key,
     required this.data,
-    this.isShowAppStore = true,
+    this.isShowAppStore = false,
     this.isShowGithub = false,
-    this.isShowPlaystore = true,
+    this.isShowPlaystore = false,
     this.isShowAssociated = true,
+    this.isClientApp = true,
   }) : super(key: key);
 
   final ProjectModel data;
@@ -23,6 +24,7 @@ class ProjectItem extends StatefulWidget {
   final bool isShowAppStore;
   final bool isShowGithub;
   final bool isShowAssociated;
+  final bool isClientApp;
 
   @override
   State<ProjectItem> createState() => _ProjectItemState();
@@ -65,6 +67,11 @@ class _ProjectItemState extends State<ProjectItem> {
                             widget.data.projectLink['playstore'],
                           );
                         },
+                      ),
+                    if (widget.isClientApp)
+                      Padding(
+                          padding: EdgeInsets.only(left: 20.h),
+                          child:const Text("Client App",style: TextStyle(color: Colors.white),)
                       ),
                     if (widget.isShowAppStore)
                       Padding(

@@ -25,53 +25,34 @@ const List<ProjectModel> listProject = [
     companyLink: 'https://www.shebatech.com.bd/',
     companyName: 'Sheba Technology Ltd.',
     projectDesc:
-        'Build a  E-commerce app using Flutter and Firebase for Android and iOS.',
-    projectLink: {
-      'playstore': '',
-      'appstore': '',
-      'github': 'https://github.com/AbuNayemSabbir/E-Shop',
-    },
-    projectTitle: 'E-Shop',
-  ),
-  ProjectModel(
-    companyLink: 'https://www.shebatech.com.bd/',
-    companyName: 'Sheba Technology Ltd.',
-    projectDesc:
-        'Build a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
-    projectLink: {
-      'playstore':
-          'https://play.google.com/store/apps/details?id=com.megasyariah',
-      'appstore': 'https://apps.apple.com/id/app/m-syariah/id1530760308',
-      'github': '',
-    },
+        '   Gov. project develop for a2i using Flutter for Android and iOS.',
 
-    projectTitle: 'M-Syariah',
+    projectTitle: 'PM APP',
   ),
   ProjectModel(
     companyLink: 'https://www.shebatech.com.bd/',
     companyName: 'Sheba Technology Ltd.',
     projectDesc:
-        'Build a Mobile Banking Application to provide financial services with Flutter for Android and iOS.',
-    projectLink: {
-      'playstore':
-          'https://play.google.com/store/apps/details?id=com.mobilemaslahah',
-      'appstore': 'https://apps.apple.com/id/app/mobile-maslahah/id1543627726',
-      'github': '',
-    },
-    projectTitle: 'Mobile Maslahah',
+        ' Local event manage base custom Calendar(Bangla & English & Arabic) using Flutter for Android and iOS.',
+
+
+    projectTitle: 'HSBC Calender App',
   ),
   ProjectModel(
     companyLink: 'https://www.shebatech.com.bd/',
     companyName: 'Sheba Technology Ltd.',
     projectDesc:
-        'Build a E-Wallet Application to provide financial services with Flutter for Android and iOS.',
-    projectLink: {
-      'playstore':
-          'https://play.google.com/store/apps/details?id=com.asiapelangi.autopay.wallet',
-      'appstore': 'https://apps.apple.com/id/app/actionpay/id1524738360',
-      'github': '',
-    },
-    projectTitle: 'ActionPay',
+        'Developed Face & Finger Verification App using native android (Java).',
+
+    projectTitle: 'Akij Ekyc',
+  ),
+  ProjectModel(
+    companyLink: 'https://www.shebatech.com.bd/',
+    companyName: 'Sheba Technology Ltd.',
+    projectDesc:
+        'Developed Face verification app using native android (Java)',
+
+    projectTitle: 'Brac Face Verification',
   ),
 ];
 

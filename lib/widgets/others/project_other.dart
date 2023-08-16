@@ -50,6 +50,8 @@ class ProjectOther extends StatelessWidget {
               isShowAppStore: false,
               isShowGithub: true,
               isShowAssociated: false,
+              isClientApp: false,
+
             );
           },
         ),
