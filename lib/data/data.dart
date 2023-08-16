@@ -44,6 +44,7 @@ const List<ProjectModel> listProject = [
       'appstore': 'https://apps.apple.com/id/app/m-syariah/id1530760308',
       'github': '',
     },
+
     projectTitle: 'M-Syariah',
   ),
   ProjectModel(
