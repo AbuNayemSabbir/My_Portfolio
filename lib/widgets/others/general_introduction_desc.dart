@@ -20,6 +20,7 @@ class _GeneralIntroductionDescState extends State<GeneralIntroductionDesc> {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
+
         text:
         "I am a software engineer specializing in developing mobile applications using Flutter. Currently, I am working on developing mobile applications at ",
         style: TextStyles.heeboText
