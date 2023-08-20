@@ -29,7 +29,7 @@ class DrawerCustom extends StatelessWidget {
     return Drawer(
       backgroundColor: AppColor.backgroundColor,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           TextButtonCustom(
             label: 'About',
@@ -43,6 +43,14 @@ class DrawerCustom extends StatelessWidget {
             label: 'Experience',
             onPressed: () {
               onPressedExperience();
+              Navigator.pop(context);
+            },
+          ),
+          verticalSpace(40.h),
+          TextButtonCustom(
+            label: 'Education',
+            onPressed: () {
+              onPressedEducation();
               Navigator.pop(context);
             },
           ),
@@ -79,7 +87,7 @@ class DrawerCustom extends StatelessWidget {
                 'https://drive.google.com/file/d/1loAbb47w4b_y_C7ZCllYbgClOQuQSmqd/view?usp=sharing',
               );
             },
-            width: 90.h,
+            width: 110.h,
             isOutline: true,
             label: 'Resume',
             color: Colors.transparent,

@@ -95,7 +95,7 @@ class _AppBarCustomState extends State<AppBarCustom> {
               ),
               horizontalSpace(40.h),
               ButtonPrimary(
-                width: 100.h,
+                width: 110.h,
                 isOutline: true,
                 label: 'Resume',
                 color: Colors.transparent,

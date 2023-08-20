@@ -49,7 +49,7 @@ class Project extends StatelessWidget {
                     ? 2
                     : 3,
             childAspectRatio:
-                MediaQuery.of(context).size.width < 600 ? 3.h : 2.5.h,
+                MediaQuery.of(context).size.width < 600 ? 2.5.h : 2.h,
             crossAxisSpacing: 15.h,
             mainAxisSpacing: 15.h,
           ),
