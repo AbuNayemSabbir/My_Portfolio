@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:my_portfolio/models/project_model.dart';
 import 'package:my_portfolio/styles/colors.dart';
 import 'package:my_portfolio/styles/styles.dart';
@@ -69,10 +70,16 @@ class _ProjectItemState extends State<ProjectItem> {
                         },
                       ),
                     if (widget.isClientApp)
-                      Padding(
-                          padding: EdgeInsets.only(left: 20.h),
-                          child:const Text("Client App",style: TextStyle(color: Colors.white),)
+                      Container(
+                          decoration: BoxDecoration(
+                            color: AppColor.primaryColor,
+                        borderRadius: BorderRadius.circular(10), // Adjust the radius value as needed
                       ),
+
+                          child: const Padding(
+                            padding: EdgeInsets.all(2.0),
+                            child: Text("Client App",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold),),
+                          )),
                     if (widget.isShowAppStore)
                       Padding(
                         padding: EdgeInsets.only(left: 20.h),
@@ -118,7 +125,33 @@ class _ProjectItemState extends State<ProjectItem> {
                       fontSize: 20.h,
                       fontWeight: FontWeight.w600,
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      if(widget.isClientApp==false){
+                        AppUtils.openLink(
+                          widget.data.projectLink['github'],
+                        );
+                      }
+                      if(widget.isClientApp==true){
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            backgroundColor: Colors.red,
+                            behavior: SnackBarBehavior.floating, // To make the SnackBar rounded
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0), // Adjust the radius as needed
+                            ),
+                            content: const Text(
+                              'This is Client App',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            duration: Duration(seconds: 2),
+                          ),
+                        );
+                      }
+
+                    },
                   ),
                   Text(
                     widget.data.projectDesc,

@@ -14,13 +14,13 @@ Widget horizontalSpace(double v) {
 class TextStyles {
   static TextStyle firaCodeText = GoogleFonts.firaCode().copyWith(
     fontWeight: FontWeight.w400,
-    fontSize: 16.h,
+    fontSize: 22.h,
     color: AppColor.primaryColor,
   );
 
   static TextStyle heeboText = GoogleFonts.heebo().copyWith(
     fontWeight: FontWeight.w400,
-    fontSize: 14.h,
+    fontSize: 32.h,
     color: AppColor.primaryColor,
   );
 }

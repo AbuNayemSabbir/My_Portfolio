@@ -4,8 +4,8 @@ import 'package:my_portfolio/data/data.dart';
 import 'package:my_portfolio/styles/colors.dart';
 import 'package:my_portfolio/widgets/buttons/text_button_custom.dart';
 
-class ExperienceDetailTitle extends StatelessWidget {
-  const ExperienceDetailTitle({
+class EducationDetailTitle extends StatelessWidget {
+  const EducationDetailTitle({
     Key? key,
     required this.onTap,
     required this.selectedIndex,
@@ -22,7 +22,7 @@ class ExperienceDetailTitle extends StatelessWidget {
       children: [
         Container(
           width: 5.h,
-          height: 100.h,
+          height: 130.h,
           decoration: BoxDecoration(
             color: selectedIndex == index
                 ? AppColor.primaryColor
@@ -37,10 +37,10 @@ class ExperienceDetailTitle extends StatelessWidget {
         ),
         Expanded(
           child: SizedBox(
-            height: 100.h,
+            height: 130.h,
             child: TextButtonCustom(
               onPressed: onTap,
-              label: listExperience[index].companyName,
+              label: listEducation[index].universityName,
               isUseOverlayColor: true,
               padding: EdgeInsets.symmetric(
                 vertical: 20.h,

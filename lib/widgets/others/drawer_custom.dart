@@ -12,12 +12,16 @@ class DrawerCustom extends StatelessWidget {
     required this.onPressedAbout,
     required this.onPressedContact,
     required this.onPressedExperience,
-    required this.onPressedWork,
+    required this.onPressedEducation,
+    required this.onPressedClientsProject,
+    required this.onPressedPersonalProjects,
   }) : super(key: key);
 
   final Function() onPressedAbout;
   final Function() onPressedExperience;
-  final Function() onPressedWork;
+  final Function() onPressedEducation;
+  final Function() onPressedClientsProject;
+  final Function() onPressedPersonalProjects;
   final Function() onPressedContact;
 
   @override
@@ -44,9 +48,18 @@ class DrawerCustom extends StatelessWidget {
           ),
           verticalSpace(40.h),
           TextButtonCustom(
-            label: 'Work',
+            label: 'Clients Projects',
             onPressed: () {
-              onPressedWork();
+              onPressedClientsProject();
+              Navigator.pop(context);
+            },
+          ),
+          verticalSpace(40.h),
+
+          TextButtonCustom(
+            label: 'Personal Projects',
+            onPressed: () {
+              onPressedPersonalProjects();
               Navigator.pop(context);
             },
           ),

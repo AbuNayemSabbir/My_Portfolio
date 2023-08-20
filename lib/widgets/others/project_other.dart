@@ -13,9 +13,9 @@ class ProjectOther extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        verticalSpace(MediaQuery.of(context).size.height / 6),
+        verticalSpace(MediaQuery.of(context).size.height / 9),
         Text(
-          'Other Noteworthy Projects',
+          'Other Personal Projects',
           style: TextStyles.heeboText.copyWith(
             fontSize: MediaQuery.of(context).size.width < 960 ? 30.h : 40.h,
             color: AppColor.textColor1,
@@ -39,9 +39,9 @@ class ProjectOther extends StatelessWidget {
                     ? 2
                     : 3,
             childAspectRatio:
-                MediaQuery.of(context).size.width < 600 ? 2.h : 1.6.h,
-            crossAxisSpacing: 20.h,
-            mainAxisSpacing: 20.h,
+            MediaQuery.of(context).size.width < 600 ? 3.0.h : 2.5.h,
+            crossAxisSpacing: 15.h,
+            mainAxisSpacing: 15.h,
           ),
           itemCount: listProjectOther.length,
           itemBuilder: (context, index) {

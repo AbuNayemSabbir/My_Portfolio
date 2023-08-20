@@ -23,7 +23,7 @@ class Footer extends StatelessWidget {
                 customIcon: 'ic_github.png',
                 iconSize: 30.h,
                 onPressed: () {
-                  AppUtils.openLink('https://github.com/fathulaziss');
+                  AppUtils.openLink('https://github.com/AbuNayemSabbir');
                 },
               ),
               horizontalSpace(40.h),
@@ -32,7 +32,7 @@ class Footer extends StatelessWidget {
                 customIcon: 'ic_linkedin.png',
                 iconSize: 30.h,
                 onPressed: () {
-                  AppUtils.openLink('https://www.linkedin.com/in/fathulaziss');
+                  AppUtils.openLink('https://www.linkedin.com/in/md-sabbir-ahmed-78a86b179/');
                 },
               ),
 

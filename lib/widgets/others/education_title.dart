@@ -3,33 +3,39 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:my_portfolio/styles/colors.dart';
 import 'package:my_portfolio/styles/styles.dart';
-import 'package:my_portfolio/utils/app_utils.dart';
 
-class GeneralIntroductionDesc extends StatefulWidget {
-  const GeneralIntroductionDesc({Key? key}) : super(key: key);
+class EducationTitle extends StatefulWidget {
+  const EducationTitle({
+    Key? key,
+    required this.universityName,
+    required this.onTap,
+    required this.position,
+  }) : super(key: key);
+
+  final String universityName;
+  final Function() onTap;
+  final String position;
 
   @override
-  State<GeneralIntroductionDesc> createState() =>
-      _GeneralIntroductionDescState();
+  State<EducationTitle> createState() => _EducationTitleState();
 }
 
-class _GeneralIntroductionDescState extends State<GeneralIntroductionDesc> {
+class _EducationTitleState extends State<EducationTitle> {
   TextDecoration decoration = TextDecoration.none;
 
   @override
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        text:
-        "I am a software engineer specializing in developing mobile applications using Flutter. Currently, I am working on developing mobile applications at ",
-        style: TextStyles.heeboText
-            .copyWith(fontSize: 20.h, color: AppColor.textColor2),
+        text: '${widget.position} ',
+        style: TextStyles.heeboText.copyWith(
+          fontSize: 22.h,
+          color: AppColor.textColor1,
+        ),
         children: [
+          const TextSpan(text: '@ '),
           TextSpan(
-            recognizer: TapGestureRecognizer()
-              ..onTap = () {
-                AppUtils.openLink('https://www.shebatech.com.bd/');
-              },
+            recognizer: TapGestureRecognizer()..onTap = widget.onTap,
             mouseCursor: MaterialStateMouseCursor.clickable,
             onEnter: (event) {
               setState(() {
@@ -41,15 +47,14 @@ class _GeneralIntroductionDescState extends State<GeneralIntroductionDesc> {
                 decoration = TextDecoration.none;
               });
             },
-            text: 'Sheba Technology Ltd.',
+            text: widget.universityName,
             style: TextStyles.heeboText.copyWith(
-              fontSize: 20.h,
+              fontSize: 22.h,
               color: AppColor.primaryColor,
               decoration: decoration,
               decorationColor: AppColor.primaryColor,
             ),
           ),
-          const TextSpan(text: '.'),
         ],
       ),
     );

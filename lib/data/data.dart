@@ -1,9 +1,9 @@
 import 'package:my_portfolio/models/experience_model.dart';
 import 'package:my_portfolio/models/project_model.dart';
 
-const List listTechnologies1 = ['Flutter', 'Git', 'Firebase'];
+const List listTechnologies1 = ['Flutter', 'Native Android', 'Git', 'Firebase'];
 
-const List listTechnologies2 = ['Rest-API', 'Figma', 'Postman'];
+const List listTechnologies2 = ['Rest-API', 'Responsive UI', 'Figma', 'Postman'];
 
 const List<ExperienceModel> listExperience = [
   ExperienceModel(
@@ -17,6 +17,18 @@ const List<ExperienceModel> listExperience = [
       'Fix bugs and ensuring the application can used properly when released.'
     ],
     position: 'Flutter Developer',
+  )
+];
+ List<EducationModel> listEducation = [
+  const EducationModel(
+    universityLink: 'https://www.bubt.edu.bd/',
+    universityName: 'Bangladesh University of Business and Technology (BUBT)',
+    duration: '2018 - 2022',
+    experiences: [
+      'Cumulative Grade Point Average: ',
+
+    ],
+    position: 'Bachelor of Science \nDepartment of Computer Science & Engineering',
   )
 ];
 
@@ -60,13 +72,24 @@ const List<ProjectModel> listProjectOther = [
   ProjectModel(
     companyName: 'Self Employee',
     projectDesc:
+    'Build a  portfolio website for mine using Flutter ',
+    projectLink: {
+      'playstore': '',
+      'appstore': '',
+      'github': 'https://github.com/AbuNayemSabbir/Flutter_free_VPN/tree/master',
+    },
+    projectTitle: 'Free VPN app',
+  ),
+  ProjectModel(
+    companyName: 'Self Employee',
+    projectDesc:
     'Build a Free VPN app using Flutter ',
     projectLink: {
       'playstore': '',
       'appstore': '',
-      'github': 'https://github.com/AbuNayemSabbir/free_vpn_app',
+      'github': 'https://github.com/AbuNayemSabbir/My_Portfolio',
     },
-    projectTitle: 'Free VPN app',
+    projectTitle: 'My Portfolio ',
   ),
   ProjectModel(
     companyName: 'Self Employee',
@@ -96,7 +119,7 @@ const List<ProjectModel> listProjectOther = [
     projectLink: {
       'playstore': '',
       'appstore': '',
-      'github': 'https://github.com/fathulaziss/flutix-getx',
+      'github': 'https://github.com/AbuNayemSabbir/Notes_APP',
     },
     projectTitle: 'Notes App  ',
   ),

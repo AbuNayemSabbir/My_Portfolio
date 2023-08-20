@@ -15,12 +15,16 @@ class AppBarCustom extends StatefulWidget implements PreferredSizeWidget {
     required this.onPressedAbout,
     required this.onPressedContact,
     required this.onPressedExperience,
-    required this.onPressedWork,
+    required this.onPressedEducation,
+    required this.onPressedClientsProject,
+    required this.onPressedPersonalProjects,
   }) : super(key: key);
 
   final Function() onPressedAbout;
   final Function() onPressedExperience;
-  final Function() onPressedWork;
+  final Function() onPressedEducation;
+  final Function() onPressedClientsProject;
+  final Function() onPressedPersonalProjects;
   final Function() onPressedContact;
 
   @override
@@ -71,8 +75,18 @@ class _AppBarCustomState extends State<AppBarCustom> {
               ),
               horizontalSpace(40.h),
               TextButtonCustom(
-                label: 'Work',
-                onPressed: widget.onPressedWork,
+                label: 'Education',
+                onPressed: widget.onPressedEducation,
+              ),
+              horizontalSpace(40.h),
+              TextButtonCustom(
+                label: 'Clients Projects',
+                onPressed: widget.onPressedClientsProject,
+              ),
+              horizontalSpace(40.h),
+              TextButtonCustom(
+                label: 'Personal Projects',
+                onPressed: widget.onPressedPersonalProjects,
               ),
               horizontalSpace(40.h),
               TextButtonCustom(
@@ -81,7 +95,7 @@ class _AppBarCustomState extends State<AppBarCustom> {
               ),
               horizontalSpace(40.h),
               ButtonPrimary(
-                width: 90.h,
+                width: 100.h,
                 isOutline: true,
                 label: 'Resume',
                 color: Colors.transparent,

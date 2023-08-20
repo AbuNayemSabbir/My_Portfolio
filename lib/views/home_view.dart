@@ -7,6 +7,7 @@ import 'package:my_portfolio/widgets/others/about.dart';
 import 'package:my_portfolio/widgets/others/appbar_custom.dart';
 import 'package:my_portfolio/widgets/others/contact.dart';
 import 'package:my_portfolio/widgets/others/drawer_custom.dart';
+import 'package:my_portfolio/widgets/others/education.dart';
 import 'package:my_portfolio/widgets/others/experience.dart';
 import 'package:my_portfolio/widgets/others/footer.dart';
 import 'package:my_portfolio/widgets/others/general_introduction.dart';
@@ -28,6 +29,7 @@ class _HomeViewState extends State<HomeView> {
     GeneralIntroduction(),
     About(),
     Experience(),
+    Education(),
     Project(),
     ProjectOther(),
     Contact(),
@@ -52,13 +54,19 @@ class _HomeViewState extends State<HomeView> {
           contentNavigation(1);
         },
         onPressedContact: () {
-          contentNavigation(5);
+          contentNavigation(6);
         },
         onPressedExperience: () {
           contentNavigation(2);
         },
-        onPressedWork: () {
+        onPressedEducation: () {
           contentNavigation(3);
+        },
+        onPressedClientsProject: () {
+          contentNavigation(4);
+        },
+        onPressedPersonalProjects: () {
+          contentNavigation(5);
         },
       ),
       appBar: AppBarCustom(
@@ -67,13 +75,19 @@ class _HomeViewState extends State<HomeView> {
           contentNavigation(1);
         },
         onPressedContact: () {
-          contentNavigation(5);
+          contentNavigation(6);
         },
         onPressedExperience: () {
           contentNavigation(2);
         },
-        onPressedWork: () {
+        onPressedEducation: () {
           contentNavigation(3);
+        },
+        onPressedClientsProject: () {
+          contentNavigation(4);
+        },
+        onPressedPersonalProjects: () {
+          contentNavigation(5);
         },
       ),
       body: Stack(

@@ -12,7 +12,7 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        verticalSpace(MediaQuery.of(context).size.height / 6),
+        verticalSpace(MediaQuery.of(context).size.height / 9),
         Text(
           'Get In Touch',
           style: TextStyles.heeboText.copyWith(
@@ -30,10 +30,10 @@ class Contact extends StatelessWidget {
                   horizontal: MediaQuery.of(context).size.width / 5,
                 ),
           child: Text(
-            "Although currently I'm not looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "I am currently working at Sheba Technology Ltd. as a Flutter Developer. While I am actively seeking new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I will do my best to respond promptly!",
             style: TextStyles.heeboText
                 .copyWith(fontSize: 20.h, color: AppColor.textColor2),
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.justify,
           ),
         ),
         verticalSpace(40.h),
@@ -47,7 +47,7 @@ class Contact extends StatelessWidget {
           radius: 5.h,
           onTap: () {
             AppUtils.launcher(
-              Uri(scheme: 'mailto', path: 'azisfathl@gmail.com'),
+              Uri(scheme: 'mailto', path: 'abunayemsabbir1@gmail.com'),
             );
           },
         ),
